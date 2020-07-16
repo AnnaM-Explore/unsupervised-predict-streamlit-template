@@ -123,18 +123,20 @@ def main():
         #st.markdown("... Or something inbetween")
         st.image(recent, width=870, caption="... Or something inbetween")
         st.markdown("We've got the best movie recommendation for you!")
+        st.info("''Some famous quote here''")
     
-    if page_selection == "Top n recommendations":
-        st.title("Top n movie recommendations")
-        st.write("Some decription with pictures")
+    if page_selection == "Top n Recommendations":
+        st.title("Top movie recommendations")
+        st.write("Some decription")
+        st.write("Maybe add a funtion to return the top number movie recommendations?")
 
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
         st.write("Describe your winning approach on this page")
 
-    if page_selection == "About us":
-        st.title("Meet the Team")
-        st.write("Team descriptions with pics")
+    if page_selection == "About Us":
+        st.title("Our Team")
+        st.info("Meet the brains behind the operations!")
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
