@@ -128,7 +128,7 @@ def main():
     if page_selection == "Top 10 Recommendations":
         st.title("Top movie recommendations")
         st.write("Some decription")
-        st.write("Maybe add a funtion to return the top number movie recommendations?")
+        st.write("Maybe add a funtion to return a certain number of movie recommendations?")
         st.write("Add button with top n function")
 
     if page_selection == "Solution Overview":
