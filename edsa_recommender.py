@@ -136,7 +136,20 @@ def main():
 
     if page_selection == "About Us":
         st.title("Our Team")
+        st.markdown("Some picture here")
         st.info("Meet the brains behind the operations!")
+        st.info("Anna Modjadji")
+        st.markdown("some description here")
+        st.info("Katlego Mokgobu")
+        st.markdown("some description here")
+        st.info("Lehlogonolo Mokwana")
+        st.markdown("some description here")
+        st.info("Shella Lekalakala")
+        st.markdown("some description here")
+        st.info("Trevas Elliott")
+        st.markdown("some description here")
+		#st.markdown("Github: https://github.com/AnnaM-Explore")
+		#st.markdown("LinkedIn: https://www.linkedin.com/in/anna-modjadji-30b410136")
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
