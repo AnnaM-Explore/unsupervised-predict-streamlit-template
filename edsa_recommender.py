@@ -38,7 +38,7 @@ dc = Image.open('resources/imgs/dc.png')
 marvel = Image.open('resources/imgs/marvel.png')
 recent = Image.open('resources/imgs/recent.png')
 
-# Add colors
+# Add background colors
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
@@ -137,18 +137,23 @@ def main():
 
     if page_selection == "About Us":
         st.title("Our Team")
-        st.markdown("Some picture here")
+        st.markdown("Some tem banner here")
         st.info("Meet the brains behind the operations!")
         st.info("Anna Modjadji")
         st.markdown("some description here")
+        st.markdown("some contact detail here")
         st.info("Katlego Mokgobu")
         st.markdown("some description here")
+        st.markdown("some contact detail here")
         st.info("Lehlogonolo Mokwana")
         st.markdown("some description here")
+        st.markdown("some contact detail here")
         st.info("Shella Lekalakala")
         st.markdown("some description here")
+        st.markdown("some contact detail here")
         st.info("Trevas Elliott")
         st.markdown("some description here")
+        st.markdown("some contact detail here")
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
