@@ -32,6 +32,19 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+# for displaying images
+from PIL import Image
+dc = Image.open('resources/imgs/dc.png')
+marvel = Image.open('resources/imgs/marvel.png')
+recent = Image.open('resources/imgs/recent.png')
+
+# Add colors
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+local_css("style.css")
+
 # Custom Libraries
 from utils.data_loader import load_movie_titles
 from recommenders.collaborative_based import collab_model
@@ -102,7 +115,14 @@ def main():
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Home":
         st.title("Welcome!")
-        st.markdown("Some decription with pictures")
+        st.info("Movie Recommender System")
+        st.markdown("Whether you are a Marvel fan...")
+        st.image(marvel)
+        st.markdown("... A DC fan ...")
+        st.image(dc)
+        st.markdown("... Or something inbetween")
+        st.image(recent)
+        st.markdown("We've got the best movie recommendation for you!")
     
     if page_selection == "Top n recommendations":
         st.title("Top n movie recommendations")
