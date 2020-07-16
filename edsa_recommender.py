@@ -117,11 +117,11 @@ def main():
         st.title("Welcome!")
         st.info("Movie Recommender System")
         st.markdown("Whether you are a Marvel fan...")
-        st.image(marvel)
+        st.image(marvel, width=870)
         st.markdown("... A DC fan ...")
-        st.image(dc)
+        st.image(dc, width=870)
         st.markdown("... Or something inbetween")
-        st.image(recent)
+        st.image(recent, width=870)
         st.markdown("We've got the best movie recommendation for you!")
     
     if page_selection == "Top n recommendations":
