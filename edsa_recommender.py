@@ -129,6 +129,7 @@ def main():
         st.title("Top movie recommendations")
         st.write("Some decription")
         st.write("Maybe add a funtion to return the top number movie recommendations?")
+        st.write("Add button with top n function")
 
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
@@ -148,8 +149,6 @@ def main():
         st.markdown("some description here")
         st.info("Trevas Elliott")
         st.markdown("some description here")
-		#st.markdown("Github: https://github.com/AnnaM-Explore")
-		#st.markdown("LinkedIn: https://www.linkedin.com/in/anna-modjadji-30b410136")
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
