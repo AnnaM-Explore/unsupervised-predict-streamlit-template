@@ -116,12 +116,12 @@ def main():
     if page_selection == "Home":
         st.title("Welcome!")
         st.info("Movie Recommender System")
-        st.markdown("Whether you are a Marvel fan...")
-        st.image(marvel, width=870)
-        st.markdown("... A DC fan ...")
-        st.image(dc, width=870)
-        st.markdown("... Or something inbetween")
-        st.image(recent, width=870)
+        #st.markdown("Whether you are a Marvel fan...")
+        st.image(marvel, width=870, caption="Whether you are a Marvel fan...")
+        #st.write("... A DC fan ...")
+        st.image(dc, width=870, caption="... A DC fan ...")
+        #st.markdown("... Or something inbetween")
+        st.image(recent, width=870, caption="... Or something inbetween")
         st.markdown("We've got the best movie recommendation for you!")
     
     if page_selection == "Top n recommendations":
