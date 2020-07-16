@@ -117,11 +117,11 @@ def main():
         st.title("Welcome!")
         st.info("Movie Recommender System")
         #st.markdown("Whether you are a Marvel fan...")
-        st.image(marvel, width=870, caption="Whether you are a Marvel fan...")
-        #st.write("... A DC fan ...")
-        st.image(dc, width=870, caption="... A DC fan ...")
-        #st.markdown("... Or something inbetween")
-        st.image(recent, width=870, caption="... Or something inbetween")
+        st.image(marvel, width=850, caption="Whether you are a Marvel fan...")
+        #st.write("A DC fan ...")
+        st.image(dc, width=850, caption="A DC fan ...")
+        #st.markdown("Or something inbetween")
+        st.image(recent, width=850, caption="Or something inbetween...")
         st.markdown("We've got the best movie recommendation for you!")
         st.info("''Some famous quote here''")
     
@@ -137,7 +137,7 @@ def main():
 
     if page_selection == "About Us":
         st.title("Our Team")
-        st.markdown("Some tem banner here")
+        st.markdown("Some team banner here")
         st.info("Meet the brains behind the operations!")
         st.info("Anna Modjadji")
         st.markdown("picture goes here")
