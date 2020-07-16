@@ -58,7 +58,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Home","Recommender System", "Top n Recommendations","Solution Overview", "About Us"]
+    page_options = ["Home","Recommender System", "Top 10 Recommendations","Solution Overview", "About Us"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -125,7 +125,7 @@ def main():
         st.markdown("We've got the best movie recommendation for you!")
         st.info("''Some famous quote here''")
     
-    if page_selection == "Top n Recommendations":
+    if page_selection == "Top 10 Recommendations":
         st.title("Top movie recommendations")
         st.write("Some decription")
         st.write("Maybe add a funtion to return the top number movie recommendations?")
