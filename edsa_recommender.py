@@ -106,7 +106,7 @@ def main():
     
     if page_selection == "Top n recommendations":
         st.title("Top n movie recommendations")
-        st.markdown("Some decription with pictures")
+        st.write("Some decription with pictures")
 
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
@@ -114,7 +114,7 @@ def main():
 
     if page_selection == "About us":
         st.title("Meet the Team")
-        st.info("Team descriptions with pics")
+        st.write("Team descriptions with pics")
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
