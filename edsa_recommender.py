@@ -34,6 +34,7 @@ import numpy as np
 
 # for displaying images
 from PIL import Image
+chewie = Image.open('resources/imgs/chewie.jpg')
 dc = Image.open('resources/imgs/dc.png')
 marvel = Image.open('resources/imgs/marvel.png')
 recent = Image.open('resources/imgs/recent.png')
@@ -123,7 +124,10 @@ def main():
         #st.markdown("Or something inbetween")
         st.image(recent, width=850, caption="Or something inbetween...")
         st.markdown("We've got the best movie recommendation for you!")
-        st.info("''Some famous quote here''")
+        st.info(" Movie quote of the day")
+        st.image(chewie)
+        st.markdown("Translation: All we have to decide is what do with the time that is given.")
+
     
     if page_selection == "Top 10 Recommendations":
         st.title("Top movie recommendations")
