@@ -34,6 +34,7 @@ import numpy as np
 
 # for displaying images
 from PIL import Image
+banner = Image.open('resources/imgs/banner.jpg')
 chewie = Image.open('resources/imgs/chewie.jpg')
 dc = Image.open('resources/imgs/dc.png')
 marvel = Image.open('resources/imgs/marvel.png')
@@ -140,8 +141,8 @@ def main():
         st.write("Describe your winning approach on this page")
 
     if page_selection == "About Us":
-        st.title("Our Team")
-        st.markdown("Some team banner here")
+        #st.title("Our Team")
+        st.image(banner, width=750)
         st.info("Meet the brains behind the operations!")
         st.info("Anna Modjadji")
         st.markdown("picture goes here")
