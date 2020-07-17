@@ -160,7 +160,7 @@ def main():
         st.markdown("Github: https://github.com/AnnaM-Explore")
         st.info("Katlego Mokgobu")
         st.image(katlego, width=250)
-        st.markdown("some description here")
+        st.markdown("Computer Science graduate and a Data Science intern at Explore Data Science Academy")
         st.markdown("Github: https://github.com/mokgobukatlego-hub")
         st.info("Lehlogonolo Mokwana")
         st.markdown("picture goes here")
