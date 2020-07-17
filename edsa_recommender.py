@@ -34,6 +34,7 @@ import numpy as np
 
 # for displaying images
 from PIL import Image
+anna = Image.open('resources/imgs/Anna.png')
 banner = Image.open('resources/imgs/banner.jpg')
 chewie = Image.open('resources/imgs/chewie.jpg')
 dc = Image.open('resources/imgs/dc.png')
@@ -60,7 +61,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Home","Recommender System", "Top 10 Recommendations","Solution Overview", "About Us"]
+    page_options = ["Home","How it works","Recommender System", "Top 10 Recommendations","Solution Overview", "About Us"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -116,8 +117,8 @@ def main():
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Home":
-        st.title("Welcome!")
-        st.info("Movie Recommender System")
+        st.title("Movie Recommender System")
+        st.subheader("Welcome! :smile:")
         #st.markdown("Whether you are a Marvel fan...")
         st.image(marvel, width=850, caption="Whether you are a Marvel fan...")
         #st.write("A DC fan ...")
@@ -126,7 +127,7 @@ def main():
         st.image(recent, width=850, caption="Or something inbetween...")
         st.markdown("We've got the best movie recommendation for you!")
         st.info(" Movie quote of the day")
-        st.image(chewie)
+        st.image(chewie, width=600)
         st.markdown("Translation: All we have to decide is what do with the time that is given.")
 
     
@@ -145,9 +146,9 @@ def main():
         st.image(banner, width=750)
         st.info("Meet the brains behind the operations!")
         st.info("Anna Modjadji")
-        st.markdown("picture goes here")
+        st.image(anna, width=250)
         st.markdown("some description here")
-        st.markdown("some contact detail here")
+        st.markdown("Github: https://github.com/AnnaM-Explore")
         st.info("Katlego Mokgobu")
         st.markdown("picture goes here")
         st.markdown("some description here")
