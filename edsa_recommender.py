@@ -41,6 +41,7 @@ dc = Image.open('resources/imgs/dc.png')
 katlego = Image.open('resources/imgs/katlego.jpg')
 marvel = Image.open('resources/imgs/marvel.png')
 recent = Image.open('resources/imgs/recent.png')
+shella = Image.open('resources/imgs/shella.jpg')
 
 # Add background colors
 def local_css(file_name):
@@ -135,7 +136,7 @@ def main():
     if page_selection == "How It Works":
         st.title("How the app works")
         st.write("Some picture here")
-        st.write("Our app uses one of the best Machine Learning algorithm to search our database of movies and recommends a similar to the ones the user likes so that you never run out of things to watch.")
+        st.write("Our app uses one of the best Machine Learning algorithms to search our regularly updated database of movies and either recommends a similar to the ones the user likes or recommends movies based on their popularity and ratings so that the user never runs out of movies to watch.")
 
     if page_selection == "Top 10 Recommendations":
         st.title("Top movie recommendations")
@@ -168,9 +169,9 @@ def main():
         st.markdown("some description here")
         st.markdown("some contact detail here")
         st.info("Shella Lekalakala")
-        st.markdown("picture goes here")
+        st.imagine(shella, width=250)
         st.markdown("some description here")
-        st.markdown("some contact detail here")
+        st.markdown("Github: http://github.com/Shella9")
         st.info("Trevas Elliott")
         st.markdown("picture goes here")
         st.markdown("some description here")
