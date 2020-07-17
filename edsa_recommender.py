@@ -134,7 +134,8 @@ def main():
 
     if page_selection == "How It Works":
         st.title("How the app works")
-        st.write("Describe the app and how it works")
+        st.write("Some picture here")
+        st.write("Our app uses one of the best Machine Learning algorithm to search our database of movies and recommends a similar to the ones the user likes so that you never run out of things to watch.")
 
     if page_selection == "Top 10 Recommendations":
         st.title("Top movie recommendations")
@@ -156,7 +157,7 @@ def main():
         st.info("Meet the brains behind the operations!")
         st.info("Anna Modjadji")
         st.image(anna, width=250)
-        st.markdown("Book worm and music enthusiast.")
+        st.markdown("Introvert, bookworm and music enthusiast.")
         st.markdown("Github: https://github.com/AnnaM-Explore")
         st.info("Katlego Mokgobu")
         st.image(katlego, width=250)
