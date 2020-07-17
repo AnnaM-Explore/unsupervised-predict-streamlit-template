@@ -36,6 +36,8 @@ import numpy as np
 from PIL import Image
 anna = Image.open('resources/imgs/Anna.png')
 banner = Image.open('resources/imgs/banner.jpg')
+banner1 = Image.open('resources/imgs/banner1.png')
+banner2 = Image.open('resources/imgs/banner2.png')
 chewie = Image.open('resources/imgs/chewie.jpg')
 dc = Image.open('resources/imgs/dc.png')
 katlego = Image.open('resources/imgs/katlego.jpg')
@@ -119,10 +121,11 @@ def main():
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Home":
+        #st.image(banner1, width=850)
         st.title("Movie Recommender System")
         #st.subheader("Welcome! :smile:")
         #st.markdown("Whether you are a Marvel fan...")
-        st.image(marvel, width=850, caption="Whether you are a Marvel fan...")
+        st.image(marvel, width=850, caption="Whether you're a Marvel fan...")
         #st.write("A DC fan ...")
         st.image(dc, width=850, caption="A DC fan ...")
         #st.markdown("Or something inbetween")
