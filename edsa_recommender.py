@@ -62,7 +62,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Home","How It Works","Recommender System", "Top 10 Recommendations","Solution Overview", "About Us"]
+    page_options = ["Home","How It Works","Recommender System", "Top 10 Recommendations","Solution Overview", "EDA", "About Us"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -145,6 +145,10 @@ def main():
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
         st.write("Describe how your model works")
+
+    if page_selection == "EDA":
+        st.title("Exploratory Data Analysis")
+        st.write("Pictures of our notebook's EDA")
 
     if page_selection == "About Us":
         #st.title("Our Team")
