@@ -62,7 +62,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Home","How it works","Recommender System", "Top 10 Recommendations","Solution Overview", "About Us"]
+    page_options = ["Home","How It Works","Recommender System", "Top 10 Recommendations","Solution Overview", "About Us"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -119,7 +119,7 @@ def main():
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Home":
         st.title("Movie Recommender System")
-        st.subheader("Welcome! :smile:")
+        #st.subheader("Welcome! :smile:")
         #st.markdown("Whether you are a Marvel fan...")
         st.image(marvel, width=850, caption="Whether you are a Marvel fan...")
         #st.write("A DC fan ...")
@@ -127,11 +127,15 @@ def main():
         #st.markdown("Or something inbetween")
         st.image(recent, width=850, caption="Or something inbetween...")
         st.markdown("We've got the best movie recommendation for you!")
+        st.markdown("")
         st.info(" Movie quote of the day")
         st.image(chewie, width=600)
         st.markdown("Translation: All we have to decide is what do with the time that is given.")
 
-    
+    if page_selection == "How It Works":
+        st.title("How the app works")
+        st.write("Describe the app and how it works")
+
     if page_selection == "Top 10 Recommendations":
         st.title("Top movie recommendations")
         st.write("Some decription")
@@ -140,15 +144,15 @@ def main():
 
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
-        st.write("Describe your winning approach on this page")
+        st.write("Describe how your model works")
 
     if page_selection == "About Us":
         #st.title("Our Team")
-        st.image(banner, width=750)
+        st.image(banner, width=700)
         st.info("Meet the brains behind the operations!")
         st.info("Anna Modjadji")
         st.image(anna, width=250)
-        st.markdown("some description here")
+        st.markdown("Book worm and music enthusiast.")
         st.markdown("Github: https://github.com/AnnaM-Explore")
         st.info("Katlego Mokgobu")
         st.image(katlego, width=250)
