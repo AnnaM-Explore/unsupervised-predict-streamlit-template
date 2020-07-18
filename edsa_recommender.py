@@ -45,6 +45,7 @@ katlego = Image.open('resources/imgs/katlego.jpg')
 how = Image.open('resources/imgs/how2.jpg')
 marvel = Image.open('resources/imgs/marvel.png')
 pack = Image.open('resources/imgs/pack.jpg')
+pop = Image.open('resources/imgs/popm.png')
 recent = Image.open('resources/imgs/recent.png')
 shella = Image.open('resources/imgs/shella.jpg')
 
@@ -148,9 +149,10 @@ def main():
 
     if page_selection == "Top 10 Recommendations":
         st.title("Top movie recommendations")
+        st.image(pop, width=400)
         st.write("Some decription")
-        st.write("Maybe add a funtion to return a certain number of movie recommendations?")
-        st.write("Add button with top n function")
+        st.write("Add a funtion to return a certain number of movie recommendations based on a chosen movie?")
+        st.write("Add a button with function")
 
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
