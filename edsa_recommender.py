@@ -38,10 +38,13 @@ anna = Image.open('resources/imgs/Anna.png')
 banner = Image.open('resources/imgs/banner.jpg')
 banner1 = Image.open('resources/imgs/banner1.png')
 banner2 = Image.open('resources/imgs/banner2.png')
+col = Image.open('resources/imgs/Col.png')
 chewie = Image.open('resources/imgs/chewie.jpg')
 dc = Image.open('resources/imgs/dc.png')
 katlego = Image.open('resources/imgs/katlego.jpg')
+how = Image.open('resources/imgs/how.jpg')
 marvel = Image.open('resources/imgs/marvel.png')
+pack = Image.open('resources/imgs/pack.jpg')
 recent = Image.open('resources/imgs/recent.png')
 shella = Image.open('resources/imgs/shella.jpg')
 
@@ -137,8 +140,9 @@ def main():
         st.markdown("Translation: All we have to decide is what do with the time that is given.")
 
     if page_selection == "How It Works":
-        st.title("How the app works")
-        st.write("Some picture here")
+        #st.title("How the app works")
+        st.image(how, width=800)
+        #st.write("Some picture here")
         st.write("Our app uses one of the best Machine Learning algorithms to search our regularly updated database of movies and either recommends a similar to the ones the user likes or recommends movies based on their popularity and ratings so that the user never runs out of movies to watch.")
 
     if page_selection == "Top 10 Recommendations":
@@ -150,11 +154,12 @@ def main():
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
         st.write("Our model works on both the collaborative-based filtering and content-based filtering.")
-        st.write("some pic here")
-        st.write("Collaborative filtering approaches build a model from user’s past behavior (i.e. items purchased or searched by the user) as well as similar decisions made by other users. This model is then used to predict items (or ratings for items) that user may have an interest in.")
-        st.write("some pic here")
-        st.write("Content-based filtering approaches uses a series of discrete characteristics of an item in order to recommend additional items with similar properties. Content-based filtering methods are totally based on a description of the item and a profile of the user’s preferences. It recommends items based on user’s past preferences.")
-        st.write("some pic here")
+        st.image(col, width=700)
+        st.write("*Collaborative Filtering*")
+        st.write("*Builds a model from user’s past behavior (i.e. items purchased or searched by the user) as well as similar decisions made by other users. This model is then used to predict items (or ratings for items) that user may have an interest in.")
+        st.write("*Content-based Filtering*")
+        st.write("*Uses a series of discrete characteristics of an item in order to recommend additional items with similar properties. Content-based filtering methods are totally based on a description of the item and a profile of the user’s preferences. It recommends items based on user’s past preferences.")
+        #st.write("some pic here")
 
     if page_selection == "EDA":
         st.title("Exploratory Data Analysis")
