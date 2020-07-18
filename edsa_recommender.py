@@ -42,7 +42,7 @@ col = Image.open('resources/imgs/Col.png')
 chewie = Image.open('resources/imgs/chewie.jpg')
 dc = Image.open('resources/imgs/dc.png')
 katlego = Image.open('resources/imgs/katlego.jpg')
-how = Image.open('resources/imgs/how.jpg')
+how = Image.open('resources/imgs/how2.jpg')
 marvel = Image.open('resources/imgs/marvel.png')
 pack = Image.open('resources/imgs/pack.jpg')
 recent = Image.open('resources/imgs/recent.png')
@@ -140,10 +140,11 @@ def main():
         st.markdown("Translation: All we have to decide is what do with the time that is given.")
 
     if page_selection == "How It Works":
-        #st.title("How the app works")
-        st.image(how, width=800)
+        st.title("How the app works")
+        #st.image(how, width=600)
         #st.write("Some picture here")
         st.write("Our app uses one of the best Machine Learning algorithms to search our regularly updated database of movies and either recommends a similar to the ones the user likes or recommends movies based on their popularity and ratings so that the user never runs out of movies to watch.")
+        st.image(pack, width=800)
 
     if page_selection == "Top 10 Recommendations":
         st.title("Top movie recommendations")
@@ -153,13 +154,14 @@ def main():
 
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
-        st.write("Our model works on both the collaborative-based filtering and content-based filtering.")
+        st.write("Our model works on both collaborative-based filtering and content-based filtering.")
         st.image(col, width=700)
         st.write("*Collaborative Filtering*")
         st.write("*Builds a model from user’s past behavior (i.e. items purchased or searched by the user) as well as similar decisions made by other users. This model is then used to predict items (or ratings for items) that user may have an interest in.")
         st.write("*Content-based Filtering*")
         st.write("*Uses a series of discrete characteristics of an item in order to recommend additional items with similar properties. Content-based filtering methods are totally based on a description of the item and a profile of the user’s preferences. It recommends items based on user’s past preferences.")
-        #st.write("some pic here")
+        st.write("some pic here")
+        st.write("Explain the top n function here")
 
     if page_selection == "EDA":
         st.title("Exploratory Data Analysis")
@@ -180,7 +182,7 @@ def main():
         st.info("Lehlogonolo Mokwana")
         st.markdown("picture goes here")
         st.markdown("some description here")
-        st.markdown("some contact detail here")
+        st.markdown("Github: https://github.com/LehlogonoloKAT")
         st.info("Shella Lekalakala")
         st.image(shella, width=250)
         st.markdown("Upbeat and Self-motivated")
