@@ -151,7 +151,7 @@ def main():
         st.title("Top movie recommendations")
         st.image(pop, width=400)
         st.write("Some decription")
-        st.write("Add a funtion to return a certain number of movie recommendations based on a chosen movie?")
+        st.write("Add a funtion to return a certain number of movie recommendations based on a chosen movie")
         st.write("Add a button with function")
 
     if page_selection == "Solution Overview":
