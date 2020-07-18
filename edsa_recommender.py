@@ -168,9 +168,9 @@ def main():
         st.write("Pictures of our notebook's EDA")
 
     if page_selection == "About Us":
-        #st.title("Our Team")
+        #st.title("Meet the brains behind the operations!")
         st.image(banner, width=700)
-        st.info("Meet the brains behind the operations!")
+        st.markdown("Meet the brains behind the operations!")
         st.info("Anna Modjadji")
         st.image(anna, width=250)
         st.markdown("Introvert, bookworm and music enthusiast.")
