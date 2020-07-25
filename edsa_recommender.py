@@ -128,21 +128,18 @@ def main():
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Home":
-        st.title("Movie Recommender System")
+        st.title("Movie Recommender System :sparkles: ")
         st.image(reel, width=550)
         st.image(marvel, width=850, caption="Whether you're a Marvel fan...")
         st.image(dc, width=850, caption="A DC fan ...")
         st.image(recent, width=850, caption="Or something inbetween...")
         st.markdown("We've got the best movie recommendation for you!")
-        st.markdown("")
         st.info(" Movie quote of the day")
         st.image(chewie, width=600)
         st.markdown("Translation: All we have to decide is what do with the time that is given.")
 
     if page_selection == "How It Works":
         st.title("How the app works")
-        #st.image(how, width=600)
-        #st.write("Some picture here")
         st.write("Our app uses one of the best Machine Learning algorithms to search our regularly updated database of movies and either recommends a similar to the ones the user likes or recommends movies based on their popularity and ratings so that the user never runs out of movies to watch.")
         st.image(pack, width=800)
 
