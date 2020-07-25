@@ -156,11 +156,11 @@ def main():
 
     if page_selection == "EDA":
         st.title("Exploratory Data Analysis")
-        st.write("Pictures of our notebook's EDA")
+        st.write("some EDA")
 
     if page_selection == "About Us":
         st.image(banner, width=700)
-        st.markdown("Meet the brains behind the operations!")
+        st.markdown("Meet the brains behind the operations! :construction_worker:")
         st.info("Anna Modjadji")
         st.image(anna, width=250)
         st.markdown("Data Science intern at Explore Data Science Academy")
