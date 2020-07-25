@@ -76,7 +76,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Home","How It Works","Recommender System","Solution Overview", "EDA", "About Us"]
+    page_options = ["Home","How It Works","Recommender System","Solution Overview", "Raw Data", "EDA", "About Us"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -156,8 +156,12 @@ def main():
         st.write("Content-based Filtering")
         st.write("* Uses a series of discrete characteristics of an item in order to recommend additional items with similar properties. Content-based filtering methods are totally based on a description of the item and a profile of the user’s preferences. It recommends items based on user’s past preferences.")
 
+    if page_selection == "Raw Data":
+        st.title("The raw data that was used to make this app possible")
+    
     if page_selection == "EDA":
         st.title("Exploratory Data Analysis")
+        st.write("The EDA that was done on the raw data provided for this app.")
         if st.checkbox('Ratings Per Class'):
             st.write("Ratings distributed according to how users rated certain movies.")
             st.image(eda1)
