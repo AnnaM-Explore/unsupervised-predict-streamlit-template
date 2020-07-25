@@ -143,13 +143,6 @@ def main():
         st.write("Our app uses one of the best Machine Learning algorithms to search our regularly updated database of movies and either recommends a similar to the ones the user likes or recommends movies based on their popularity and ratings so that the user never runs out of movies to watch.")
         st.image(pack, width=800)
 
-    if page_selection == "Top 10 Recommendations":
-        st.title("Top movie recommendations")
-        st.image(pop, width=400)
-        st.write("Some decription")
-        st.write("Add a funtion to return a certain number of movie recommendations based on a chosen movie")
-        st.write("Add a button with function")
-
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
         st.write("Our model works on both collaborative-based filtering and content-based filtering.")
@@ -166,7 +159,6 @@ def main():
         st.write("Pictures of our notebook's EDA")
 
     if page_selection == "About Us":
-        #st.title("Meet the brains behind the operations!")
         st.image(banner, width=700)
         st.markdown("Meet the brains behind the operations!")
         st.info("Anna Modjadji")
