@@ -159,8 +159,10 @@ def main():
     if page_selection == "EDA":
         st.title("Exploratory Data Analysis")
         if st.checkbox('Ratings Per Class'):
+            st.write("Ratings distributed according to how users rated certain movies.")
             st.image(eda1)
         if st.checkbox('Most Popular Genre'):
+            st.write("The most popular movies by genre")
             st.image(eda2, width=850)
         if st.checkbox('Top 10 Users'):
             st.image(eda3, width=800)
