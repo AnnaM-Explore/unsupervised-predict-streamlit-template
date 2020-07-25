@@ -49,6 +49,7 @@ marvel = Image.open('resources/imgs/marvel.png')
 pack = Image.open('resources/imgs/pack.jpg')
 pop = Image.open('resources/imgs/popm.png')
 recent = Image.open('resources/imgs/recent.png')
+reel = Image.open('resources/imgs/reel.png')
 shella = Image.open('resources/imgs/shella.jpg')
 
 # Add background colors
@@ -71,7 +72,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Home","How It Works","Recommender System", "Top 10 Recommendations","Solution Overview", "EDA", "About Us"]
+    page_options = ["Home","How It Works","Recommender System","Solution Overview", "EDA", "About Us"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -127,14 +128,10 @@ def main():
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Home":
-        #st.image(banner1, width=850)
         st.title("Movie Recommender System")
-        #st.subheader("Welcome! :smile:")
-        #st.markdown("Whether you are a Marvel fan...")
+        st.image(reel, width=550)
         st.image(marvel, width=850, caption="Whether you're a Marvel fan...")
-        #st.write("A DC fan ...")
         st.image(dc, width=850, caption="A DC fan ...")
-        #st.markdown("Or something inbetween")
         st.image(recent, width=850, caption="Or something inbetween...")
         st.markdown("We've got the best movie recommendation for you!")
         st.markdown("")
