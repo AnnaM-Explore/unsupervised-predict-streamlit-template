@@ -161,11 +161,11 @@ def main():
         if st.checkbox('Ratings Per Class'):
             st.image(eda1)
         if st.checkbox('Most Popular Genre'):
-            st.write("some EDA")
+            st.image(eda2)
         if st.checkbox('Top 10 Users'):
-            st.write("some EDA")
+            st.image(eda3)
         if st.checkbox('Wordcloud of Movie Tags'):
-            st.write("some EDA")
+            st.image(eda4)
         if st.checkbox('name of EDA5'):
             st.write("some EDA")
         if st.checkbox('name of EDA6'):
