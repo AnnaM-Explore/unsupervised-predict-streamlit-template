@@ -42,6 +42,10 @@ batman = Image.open('resources/imgs/batman.jpg')
 col = Image.open('resources/imgs/Col.png')
 chewie = Image.open('resources/imgs/chewie.jpg')
 dc = Image.open('resources/imgs/dc.png')
+eda1 = Image.open('resources/imgs/eda1.png')
+eda2 = Image.open('resources/imgs/eda2.png')
+eda3 = Image.open('resources/imgs/eda3.png')
+eda4 = Image.open('resources/imgs/eda4.png')
 katlego = Image.open('resources/imgs/katlego.jpg')
 how = Image.open('resources/imgs/how2.jpg')
 lehlogonolo = Image.open('resources/imgs/lehlogonolo1.jpg')
@@ -154,7 +158,20 @@ def main():
 
     if page_selection == "EDA":
         st.title("Exploratory Data Analysis")
-        st.write("some EDA")
+        if st.checkbox('Ratings Per Class'):
+            st.image(eda1)
+        if st.checkbox('Most Popular Genre'):
+            st.write("some EDA")
+        if st.checkbox('Top 10 Users'):
+            st.write("some EDA")
+        if st.checkbox('Wordcloud of Movie Tags'):
+            st.write("some EDA")
+        if st.checkbox('name of EDA5'):
+            st.write("some EDA")
+        if st.checkbox('name of EDA6'):
+            st.write("some EDA")
+        if st.checkbox('name of EDA7'):
+            st.write("some EDA")
 
     if page_selection == "About Us":
         st.image(banner, width=700)
