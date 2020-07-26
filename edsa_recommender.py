@@ -168,13 +168,15 @@ def main():
         st.image(col, width=700)
         st.subheader("Collaborative Filtering")
         #st.write("* Builds a model from user’s past behavior (i.e. items purchased or searched by the user) as well as similar decisions made by other users. This model is then used to predict items (or ratings for items) that user may have an interest in.")
-        st.write(" * Matches users to people with similar tastes. Users who have similar tastes are put in a “basket” algorithmic-ally,  and recommendations are given based on what these users like on a whole. There are 3 approaches to this :  user-user collaborative filtering, item-item collaborative filtering and matrix factorization.")
+        #st.write("* ")
         st.image(colfil)
         st.write("* The output is the prediction of user u’s rating on item i.")
         st.write("* We utilize the similarity measure between user u and user v in this case.")
         st.subheader("Content-based Filtering")
         st.write("* Uses a series of discrete characteristics of an item in order to recommend additional items with similar properties. Content-based filtering methods are totally based on a description of the item and a profile of the user’s preferences. It recommends items based on user’s past preferences.")
         st.image(confil)
+        st.write(" * Matches users to people with similar tastes. Users who have similar tastes are put in a “basket” algorithmic-ally,  and recommendations are given based on what these users like on a whole. There are 3 approaches to this :  user-user collaborative filtering, item-item collaborative filtering and matrix factorization.")
+        #st.write("* ")
 
     if page_selection == "Data":
         st.title("Raw Data")
