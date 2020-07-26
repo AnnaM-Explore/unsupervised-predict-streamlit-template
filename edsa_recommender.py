@@ -152,6 +152,13 @@ def main():
         st.title("How the app works")
         st.write("Our app uses one of the best Machine Learning algorithms to search our regularly updated database of movies and either recommends a similar to the ones the user likes or recommends movies based on their popularity and ratings so that the user never runs out of movies to watch.")
         st.image(pack, width=800)
+        st.subheader("How to get a recommendation")
+        st.write("1. Choose an algorithm")
+        st.write("2. Choose your first favourite movie")
+        st.write("3. Choose your second favourite movie")
+        st.write("4. Choose your third favourite movie")
+        st.write("5. Click on the recommend button")
+        st.info("Now you're all set. Let's make some recommendations!")
 
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
@@ -214,7 +221,6 @@ def main():
         st.info("Trevas Elliott")
         st.image(batman)
         st.markdown("Data Science intern at Explore Data Science Academy")
-        st.markdown("some contact detail here")
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
