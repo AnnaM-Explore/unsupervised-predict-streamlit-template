@@ -161,6 +161,7 @@ def main():
         st.write("* We utilize the similarity measure between user u and user v in this case.")
         st.subheader("Content-based Filtering")
         st.write("* Uses a series of discrete characteristics of an item in order to recommend additional items with similar properties. Content-based filtering methods are totally based on a description of the item and a profile of the user’s preferences. It recommends items based on user’s past preferences.")
+        st.image(colfil)
 
     if page_selection == "Data":
         st.title("Raw Data")
