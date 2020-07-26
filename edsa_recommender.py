@@ -50,6 +50,7 @@ katlego = Image.open('resources/imgs/katlego.jpg')
 how = Image.open('resources/imgs/how2.jpg')
 lehlogonolo = Image.open('resources/imgs/lehlogonolo1.jpg')
 marvel = Image.open('resources/imgs/marvel.png')
+movie = Image.open('resources/imgs/movie_icon.jpg')
 pack = Image.open('resources/imgs/pack.jpg')
 pop = Image.open('resources/imgs/popm.png')
 recent = Image.open('resources/imgs/recent.png')
@@ -133,7 +134,8 @@ def main():
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Home":
         st.title("Movie Recommender System :sparkles: ")
-        st.image(reel, width=550)
+        st.image(movie, width=630)
+        #st.image(reel, width=550)
         st.image(marvel, width=850, caption="Whether you're a Marvel fan...")
         st.image(dc, width=850, caption="A DC fan ...")
         st.image(recent, width=850, caption="Or something inbetween...")
