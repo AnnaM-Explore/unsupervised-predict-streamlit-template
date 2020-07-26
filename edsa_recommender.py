@@ -158,7 +158,9 @@ def main():
         st.write("3. Choose your second favourite movie")
         st.write("4. Choose your third favourite movie")
         st.write("5. Click on the recommend button")
+        st.image(pop, width=550)
         st.info("Now you're all set. Let's make some recommendations!")
+
 
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
