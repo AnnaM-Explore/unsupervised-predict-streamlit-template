@@ -172,6 +172,10 @@ def main():
         st.write("* Uses a series of discrete characteristics of an item in order to recommend additional items with similar properties. Content-based filtering methods are totally based on a description of the item and a profile of the user’s preferences. It recommends items based on user’s past preferences.")
         st.write("* The content-based filtering algorithm finds the cosine of the angle between the profile vector and item vector, i.e. cosine similarity. Suppose A is the profile vector and B is the item vector, then the similarity between them can be calculated as:")
         st.write("sim equation here")
+        st.write("* Based on the cosine value, which ranges between -1 to 1, the movies are arranged in descending order and one of the two below approaches is used for recommendations:")
+        st.write("* - Top-n approach: where the top n movies are recommended")
+        st.write("* - Rating scale approach: Where a threshold is set and all the movies above that threshold are recommended")
+
 
     if page_selection == "Data":
         st.title("Raw Data")
