@@ -43,21 +43,27 @@ colfil = Image.open('resources/imgs/colfil.png')
 col = Image.open('resources/imgs/Col.png')
 confil = Image.open('resources/imgs/confil.png')
 chewie = Image.open('resources/imgs/chewie.jpg')
+cumulative = Image.open('resources/imgs/cumgenre.png')
 dc = Image.open('resources/imgs/dc.png')
 eda1 = Image.open('resources/imgs/eda1.png')
 eda2 = Image.open('resources/imgs/eda2.png')
 eda3 = Image.open('resources/imgs/eda3.png')
 eda4 = Image.open('resources/imgs/eda4.png')
-katlego = Image.open('resources/imgs/katlego.jpg')
+genre = Image.open('resources/imgs/genre.png')
 how = Image.open('resources/imgs/how2.jpg')
+katlego = Image.open('resources/imgs/katlego.jpg')
 lehlogonolo = Image.open('resources/imgs/lehlogonolo1.jpg')
 marvel = Image.open('resources/imgs/marvel.png')
 movie = Image.open('resources/imgs/movie_icon.jpg')
 pack = Image.open('resources/imgs/pack.jpg')
 pop = Image.open('resources/imgs/popm.png')
+pred = Image.open('resources/imgs/pred.png')
+rating = Image.open('resources/imgs/ratingyear.png')
 recent = Image.open('resources/imgs/recent.png')
 reel = Image.open('resources/imgs/reel.png')
+sim = Image.open('resources/imgs/sim.jpg')
 shella = Image.open('resources/imgs/shella.jpg')
+tags = Image.open('resources/imgs/tags.png')
 
 # Add background colors
 def local_css(file_name):
@@ -169,7 +175,7 @@ def main():
         st.subheader("Collaborative Filtering")
         st.write(" * Matches users to people with similar tastes. Users who have similar tastes are put in a “basket” algorithmic-ally,  and recommendations are given based on what these users like on a whole. There are 3 approaches to this :  user-user collaborative filtering, item-item collaborative filtering and matrix factorization.")
         st.write("The prediction Pu,i is given by:")
-        st.write("some pic")
+        st.image(pred, width=400)
         st.write("* - Pu,i is the prediction of an item")
         st.write("* - rv,i is the rating given by a user v to a movie i")
         st.write("* - Su,v is the similarity between users")
@@ -181,7 +187,7 @@ def main():
         st.subheader("Content-based Filtering")
         st.write("* Uses a series of discrete characteristics of an item in order to recommend additional items with similar properties. Content-based filtering methods are totally based on a description of the item and a profile of the user’s preferences. It recommends items based on user’s past preferences.")
         st.write("* The content-based filtering algorithm finds the cosine of the angle between the profile vector and item vector, i.e. cosine similarity. Suppose A is the profile vector and B is the item vector, then the similarity between them can be calculated as:")
-        st.write("sim equation here")
+        st.image(sim)
         st.write("* Based on the cosine value, which ranges between -1 to 1, the movies are arranged in descending order and one of the two below approaches is used for recommendations:")
         st.write("* - Top-n approach: where the top n movies are recommended")
         st.write("* - Rating scale approach: Where a threshold is set and all the movies above that threshold are recommended")
@@ -197,21 +203,21 @@ def main():
         st.title("Exploratory Data Analysis")
         st.write("The EDA that was done on the raw data provided for this app.")
         if st.checkbox('Ratings Per Class'):
-            st.write("Ratings distributed according to how users rated certain movies.")
             st.image(eda1)
         if st.checkbox('Most Popular Genre'):
-            st.write("The most popular movies by genre")
             st.image(eda2, width=850)
         if st.checkbox('Top 10 Users'):
             st.image(eda3, width=800)
-        if st.checkbox('Wordcloud of Movie Tags'):
+        if st.checkbox('Wordcloud of Movie Titles'):
             st.image(eda4, width=800)
-        if st.checkbox('name of EDA5'):
-            st.write("some EDA")
-        if st.checkbox('name of EDA6'):
-            st.write("some EDA")
-        if st.checkbox('name of EDA7'):
-            st.write("some EDA")
+        if st.checkbox('Number of Movies Rated Each Year'):
+            st.image(rating, width=700)
+        if st.checkbox('Wordcloud of Genres'):
+            st.image(genre, width=700)
+        if st.checkbox('Wordcloud of Movie Tags'):
+            st.image(tags, width=700)
+        if st.checkbox('Cumulative Number of Movies per Genre per Year'):
+            st.image(cumulative, width=700)
 
     if page_selection == "About Us":
         st.image(banner, width=700)
